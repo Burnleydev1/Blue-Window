@@ -1,8 +1,9 @@
 import { test, expect, selectors, chromium } from "@playwright/test";
-import { describe, todo } from "node:test";
+import { describe } from "node:test";
 import fillProfileFormMandatory from "./utils/fillProfileFormMandatory";
 import fillProfileFormOptional from "./utils/fillProfileFormOptional";
-
+// NB: Playwright like other testing tools is not able to handle alerts gracefully
+// It would be better to deactivate the submit button when the conditions are not met
 describe("test", () => {
   const submitted = "https://qa-assessment.pages.dev/";
   const notSubmitted = /^https:\/\/qa-assessment\.pages\.dev\/?$/;
