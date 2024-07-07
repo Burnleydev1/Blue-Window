@@ -5,8 +5,8 @@
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/user-profile-automation.git
-    cd user-profile-automation
+    git clone git@github.com:Burnleydev1/Blue-Window.git
+    cd Blue-Window
     ```
 
 2. Install dependencies:
